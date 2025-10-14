@@ -7,6 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!---------------------------------- SEARCH + FILTER -------------------------------->
+
+  <div class="top-bar">
+    <input type="text" class="search-box" placeholder="Search your meal...">
+    <button class="filter-btn">Filter</button>
+  </div>
+
+    <!---------------------------------- ROUNDED CARDS ---------------------------------->
+
+ <div class="slider-wrapper">
+  <button class="arrow left"><</button>
+
+  <div class="card-container">
+    <div class="card" style="--img:url('https://fitfoodiefinds.com/wp-content/uploads/2017/01/bakedeggs1.png')">
+      <a href="#" class="heading">BREAK FAST</a>
+    </div>
+    <div class="card" style="--img:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3uigpp5aFUHFQU_CTyi5rcQMCmuTEeyVvA&s')">
+      <a href="#" class="heading">LUNCH</a>
+    </div>
+    <div class="card" style="--img:url('https://untoldrecipesbynosheen.com/wp-content/uploads/2025/04/beef-boti-featured.jpg')">
+      <a href="#" class="heading">DINNER</a>
+    </div>
+    <div class="card" style="--img:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9AK2NMw0BGS47dc9w3XdCJJaAB8Z2U0ZVw&s')">
+      <a href="#" class="heading">DESSERT</a>
+    </div>
+    <div class="card" style="--img:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSe0AU5HAS6BpU3tAgDRkPe_iGIxqPA3_qkq9XqRrTnlf0_AMn6ajMLyc-ncefMfxCNs&usqp=CAU')">
+      <a href="#" class="heading">SNACKS</a>
+    </div>
+    <div class="card" style="--img:url('https://untoldrecipesbynosheen.com/wp-content/uploads/2022/11/aloo-palak-featured-scaled-e1744684525442.jpg')">
+      <a href="#" class="heading">VEG</a>
+    </div>
+    <div class="card" style="--img:url('https://www.willflyforfood.net/wp-content/uploads/2022/11/pakistani-food-seekh-kabab.jpg.webp')">
+      <a href="#" class="heading">NON-VEG</a>
+    </div>
+    <div class="card" style="--img:url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2018_25/2472736/1806251-healthy-snacks-al-1034.jpg')">
+      <a href="#" class="heading">HEALTHY</a>
+    </div>
+    <div class="card" style="--img:url('https://images.unsplash.com/photo-1585032226651-759b368d7246?ixlib=rb-4.1.0&fm=jpg&q=60&w=3000')">
+      <a href="#" class="heading">CHINESE</a>
+    </div>
+    <div class="card" style="--img:url('https://www.shutterstock.com/image-photo/homemade-chocolate-brownies-on-dark-260nw-266527172.jpg')">
+      <a href="#" class="heading">BAKING</a>
+    </div>
+  </div>
+
+  <button class="arrow right">></button>
+</div>
+
+
+<script>
+  const container = document.querySelector('.card-container');
+  const left = document.querySelector('.arrow.left');
+  const right = document.querySelector('.arrow.right');
+
+  right.onclick = () => container.scrollBy({ left: 300, behavior: 'smooth' });
+  left.onclick = () => container.scrollBy({ left: -300, behavior: 'smooth' });
+</script>
 </body>
 </html>
