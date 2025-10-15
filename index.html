@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+  
     <!---------------------------------- SEARCH + FILTER -------------------------------->
 
   <div class="top-bar">
-    <input type="text" class="search-box" placeholder="Search your meal...">
-    <button class="filter-btn">Filter</button>
+    <input type="text"  id="SearchBox" class="search-box" placeholder="Search your meal...">
+    <button class="filter-btn" id="SearchBtn">Search</button>
+
   </div>
 
     <!---------------------------------- ROUNDED CARDS ---------------------------------->
@@ -56,6 +60,18 @@
 </div>
 
 
+<!-- cards  -->
+ 
+<maiv>
+  <section >
+      <div class="recipe-container flex flex-wrap gap-6 justify-center mt-10"></div>
+
+
+    </div>
+  </section>
+</maiv>
+
+
 <script>
   const container = document.querySelector('.card-container');
   const left = document.querySelector('.arrow.left');
@@ -64,5 +80,8 @@
   right.onclick = () => container.scrollBy({ left: 300, behavior: 'smooth' });
   left.onclick = () => container.scrollBy({ left: -300, behavior: 'smooth' });
 </script>
+
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script src="script.js"></script>
 </body>
 </html>
