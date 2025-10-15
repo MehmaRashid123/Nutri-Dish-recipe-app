@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriDish</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+  
     <!---------------------------------- SEARCH + FILTER -------------------------------->
 
   <div class="top-bar">
-    <input type="text" class="search-box" placeholder="Search your meal...">
-    <button class="filter-btn">Filter</button>
+    <input type="text"  id="SearchBox" class="search-box" placeholder="Search your meal...">
+    <button class="filter-btn" id="SearchBtn">Search</button>
+
   </div>
 
     <!---------------------------------- ROUNDED CARDS ---------------------------------->
@@ -55,68 +59,7 @@
   <button class="arrow right">></button>
 </div>
 
-<!-- ----------------------- Footer -------------------------------- -->
 
-
-<div class="footer">
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- Logo & tagline -->
-      <div class="footer-logo">
-        <img src="logo.png" alt="Nutridish Logo">
-        <p>Nourishing your life,<br>one dish at a time.</p>
-      </div>
-
-      <!-- Company links -->
-      <div class="footer-column">
-        <h4>COMPANY</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">RecipeS</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div> 
-      <!-- get in touch links -->
-      <div class="footer-column">
-        <h4>GET IN TOUCH</h4>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <!-- Connect section -->
-      <div class="footer-column connect">
-        <h4>CONNECT</h4>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-        </div>
-        <div class="subscribe-box">
-          <input type="email" placeholder="Your Email Address">
-          <button>Subscribe</button>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-      <p>All right reserved © 2025 Copyrights.</p>
-      <div class="policies"> 
-        <a href="#">Terms of Service</a> |
-        <a href="#">Cookie Policy</a>
-      </div>
-    </div>    
-  </footer>
-</div> 
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-</div>
 <script>
   const container = document.querySelector('.card-container');
   const left = document.querySelector('.arrow.left');
@@ -125,5 +68,8 @@
   right.onclick = () => container.scrollBy({ left: 300, behavior: 'smooth' });
   left.onclick = () => container.scrollBy({ left: -300, behavior: 'smooth' });
 </script>
+
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script src="script.js"></script>
 </body>
 </html>
