@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-  padding: 40px;
   background: linear-gradient(135deg, #E8EBD8, #C9D5B5, #F0F3E0);
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,5 +240,142 @@ body {
     width: 100%;
     padding: 12px 14px;
     font-size: 15px;
+  }
+}
+
+
+/* --------------- Footer ------------------------ */
+ 
+  .footer {
+  background-color: #f5f4eb;
+  color: #2e372e;
+  padding: 40px 60px;
+  text-align: left;
+  width: 100%;
+}
+
+.footer-container { 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* 🔹 Logo Section */
+.footer-logo img {
+  width: 160px; /* Increased from 120px */
+  margin-bottom: 8px;
+  display: block;
+}
+
+.footer-logo p {
+  font-size: 16px; /* Slightly bigger font */
+  color: #555;
+  line-height: 1.5;
+  margin-top: 0; /* Brings text closer under logo */
+}
+
+/* 🔹 Footer Columns */
+.footer-column h4 {
+  font-size: 16px; /* Increased font */
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #2e372e;
+  font-size: 15px; /* Slightly bigger */
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #3d5c3d;
+}
+
+/* 🔹 Social Icons */
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px; /* Increased */
+  color: #2e372e;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #3d5c3d;
+}
+
+/* 🔹 Subscribe Box */
+.subscribe-box {
+  margin-top: 15px;
+}
+
+.subscribe-box input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px; /* Slightly wider */
+  margin-right: 5px;
+}
+
+.subscribe-box button {
+  background-color: #3d5c3d;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.subscribe-box button:hover {
+  background-color: #2e442e;
+}
+
+/* 🔹 Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px; /* Increased slightly */
+  color: #555;
+  margin-top: 25px;
+}
+
+.footer-bottom a {
+  color: #2e372e;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-box button {
+    width: 100%;
   }
 }
